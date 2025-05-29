@@ -197,7 +197,20 @@ Calls `predict_fault()` to output `fault_flag` and probability for each sample.
 
 * Retrained `rf_raw` on scaled raw features to extract importances.
 * Top features listed in `models/feature_importances.csv`.
+
 * **PSI** (Population Stability Index) computed between train & test distributions; features with PSI >0.10 flagged for drift and monitoring.
+| Feature Index |    PSI | Drift Level | What to Do                                                    |
+| ------------: | -----: | :---------: | :------------------------------------------------------------ |
+|           426 | 0.1239 |   Moderate  | Investigate sensor/process behind column 426.                 |
+|           153 | 0.1054 |   Moderate  | Look for operational changes or noise issues in this channel. |
+|           135 | 0.1001 |   Moderate  | Right on the “watch” threshold—monitor going forward.         |
+|           405 | 0.0990 |    Slight   | Just under moderate—keep an eye on it.                        |
+|           288 | 0.0989 |    Slight   | Same as above.                                                |
+|           456 | 0.0928 |    Slight   | Slight drift—probably OK but note any process tweaks.         |
+|           367 | 0.0870 |    Slight   | Slight drift.                                                 |
+|           138 | 0.0867 |    Slight   | Slight drift.                                                 |
+|            88 | 0.0821 |    Slight   | Slight drift.                                                 |
+|           411 | 0.0820 |    Slight   | Slight drift.                                                 |
 
 ---
 
