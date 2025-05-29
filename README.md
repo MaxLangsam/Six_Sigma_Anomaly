@@ -193,7 +193,7 @@ Calls `predict_fault()` to output `fault_flag` and probability for each sample.
 
 ## Feature Importances & Drift Monitoring
 
-![Top Feature Importances](feature_importances.png)
+![Top Feature Importances](rf_feature_importances_raw.png)
 
 * Retrained `rf_raw` on scaled raw features to extract importances.
 * Top features listed in `models/feature_importances.csv`.
