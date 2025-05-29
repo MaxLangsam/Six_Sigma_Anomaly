@@ -183,7 +183,7 @@ Calls `predict_fault()` to output `fault_flag` and probability for each sample.
 | One-Class SVM        | N/A     | 0.923         |
 | Autoencoder          | N/A     | 0.919         |
 
-![ROC Curves](roc_curve.png)
+![ROC Curves](roc_curves.png)
 
 ![Precision–Recall Curves](pr_curves.png)
 
