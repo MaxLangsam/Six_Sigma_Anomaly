@@ -1,0 +1,7 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+xgboost      # optional for supervised tuning
+tensorflow   # optional for autoencoder
+joblib
