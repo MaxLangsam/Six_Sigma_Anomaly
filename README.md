@@ -1,4 +1,4 @@
-[Download README.md](./README.md)
+
 
 A robust end-to-end anomaly detection pipeline for manufacturing processes using the SECOM dataset, integrating supervised and unsupervised models to detect production faults efficiently.
 
@@ -183,9 +183,9 @@ Calls `predict_fault()` to output `fault_flag` and probability for each sample.
 | One-Class SVM        | N/A     | 0.923         |
 | Autoencoder          | N/A     | 0.919         |
 
-![ROC Curves](./images/roc_curve.png)
+![ROC Curves](./roc_curve.png)
 
-![Precision–Recall Curves](./images/precision_recall_curves.png)
+![Precision–Recall Curves](./precision_recall_curves.png)
 
 **Conclusion**: Supervised RandomForest provides the best fault detection. High AP (>0.95) ensures few false alarms.
 
@@ -193,7 +193,7 @@ Calls `predict_fault()` to output `fault_flag` and probability for each sample.
 
 ## Feature Importances & Drift Monitoring
 
-![Top Feature Importances](./images/feature_importances.png)
+![Top Feature Importances](./feature_importances.png)
 
 * Retrained `rf_raw` on scaled raw features to extract importances.
 * Top features listed in `models/feature_importances.csv`.
